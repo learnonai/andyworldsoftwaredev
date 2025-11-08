@@ -1,5 +1,7 @@
+'use client'
 import Header from '../../components/Header'
 import Footer from '../../components/Footer'
+import TeamImage from '../../components/TeamImage'
 import { Users, Target, Award, MapPin } from 'lucide-react'
 
 export default function About() {
@@ -60,7 +62,7 @@ export default function About() {
           
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             <div className="bg-white p-8 rounded-lg shadow-md text-center">
-              <div className="w-32 h-32 bg-gray-300 rounded-full mx-auto mb-6"></div>
+              <TeamImage name="ganesh-navale" alt="Ganesh Navale" />
               <h3 className="text-xl font-semibold mb-2">Ganesh Navale</h3>
               <p className="text-primary font-medium mb-3">Founder & CEO</p>
               <p className="text-gray-600">
@@ -70,7 +72,7 @@ export default function About() {
             </div>
 
             <div className="bg-white p-8 rounded-lg shadow-md text-center">
-              <div className="w-32 h-32 bg-gray-300 rounded-full mx-auto mb-6"></div>
+              <TeamImage name="somesh-navale" alt="Somesh Navale" />
               <h3 className="text-xl font-semibold mb-2">Somesh Navale</h3>
               <p className="text-primary font-medium mb-3">CTO & Co-founder</p>
               <p className="text-gray-600">
@@ -79,7 +81,7 @@ export default function About() {
             </div>
 
             <div className="bg-white p-8 rounded-lg shadow-md text-center">
-              <div className="w-32 h-32 bg-gray-300 rounded-full mx-auto mb-6"></div>
+              <TeamImage name="trupti-dongare" alt="Trupti Dongare" />
               <h3 className="text-xl font-semibold mb-2">Trupti Dongare</h3>
               <p className="text-primary font-medium mb-3">Lead Engineer</p>
               <p className="text-gray-600">

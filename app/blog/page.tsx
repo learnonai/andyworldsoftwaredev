@@ -1,5 +1,7 @@
+'use client'
 import Header from '../../components/Header'
 import Footer from '../../components/Footer'
+import BlogImage from '../../components/BlogImage'
 import { Calendar, User, ArrowRight } from 'lucide-react'
 import Link from 'next/link'
 
@@ -101,9 +103,7 @@ export default function Blog() {
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             {posts.map((post) => (
               <article key={post.id} className="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition-shadow">
-                <div className="h-48 bg-gradient-to-br from-blue-100 to-blue-50 flex items-center justify-center">
-                  <span className="text-gray-500 text-sm">Blog Post Image</span>
-                </div>
+                <BlogImage id={post.id} />
                 
                 <div className="p-6">
                   <div className="flex items-center justify-between mb-3">

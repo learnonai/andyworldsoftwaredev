@@ -1,5 +1,7 @@
+'use client'
 import Header from '../../components/Header'
 import Footer from '../../components/Footer'
+import ProjectImage from '../../components/ProjectImage'
 import { ExternalLink, Github } from 'lucide-react'
 
 export default function Portfolio() {
@@ -106,9 +108,7 @@ export default function Portfolio() {
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             {projects.map((project) => (
               <div key={project.id} className="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition-shadow">
-                <div className="h-48 bg-gray-300 flex items-center justify-center">
-                  <span className="text-gray-600">Project Screenshot</span>
-                </div>
+                <ProjectImage id={project.id} title={project.title} />
                 
                 <div className="p-6">
                   <div className="flex items-center justify-between mb-2">
